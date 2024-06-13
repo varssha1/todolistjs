@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="todo2.css">
+</head>
+<body>
+    <center>
+        <h1><b>TO DO LIST</b></h1>
+        <div class="container">
+            <input type="text" id="ip" placeholder="Enter a task.." onkeypress="handle(event)">
+            <button id="addbtn">Add</button>
+            <ul id="todo-list"></ul>
+        </div>
+        <br><br>
+        <div class="filters">
+            <div class="row">
+                <div class="column"><button id="all">All</button></div>
+                <div class="column"><button id="pending">Pending</button></div>
+                <div class="column"><button id="completed">Completed</button></div>
+                <div class="column"><button id="clear">Clear completed</button></div>
+            </div>
+        </div>
+    </center>
+    <!-- <script>
+        let input = document.getElementById("ip");
+        input.addEventListener('keyup', function(ev){
+            console.log(ev);
+        })
+    </script> -->
+    <script src="todo2.js"></script>
+</body>
+</html>
